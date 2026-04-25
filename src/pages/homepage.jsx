@@ -39,7 +39,6 @@ export default function HomePage() {
         <div className="hero-content">
           <h1 className="main-title-text">
             Chào mừng bạn đến với <br /> 
-            <span className="brand-accent">Spyro Tarot</span>
           </h1>
           
           <div className="card-display-area">
@@ -74,7 +73,6 @@ export default function HomePage() {
         <Link to="/feedback" className="home-box">
           <h3 className="home-title">Đánh giá khách hàng</h3>
           <p className="home-desc">
-            Lắng nghe những câu chuyện và trải nghiệm thực tế từ cộng đồng đã đồng hành cùng Spyro Tarot.
           </p>
           <span className="box-footer-link">Xem phản hồi ◈</span>
         </Link>

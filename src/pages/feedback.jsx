@@ -13,7 +13,6 @@ export const Feedback = () => {
       <div className="feedback-container">
         <header className="feedback-header">
           <h2 className="feedback-title">Phản hồi khách hàng</h2>
-          <p className="feedback-subtitle">Trải nghiệm thực tế từ những người đã ghé thăm Spyro Tarot</p>
         </header>
         
         <div className="feedback-grid">
