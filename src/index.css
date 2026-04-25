@@ -1,0 +1,151 @@
+/* ================================
+   GOOGLE FONTS & SETUP
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&family=Cormorant+Garamond:wght@400;700&family=Roboto:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001f3f;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ================================
+   TYPOGRAPHY (CHỮ NGHĨA)
+================================ */
+h1, .hero-title {
+    font-family: 'Vollkorn', serif;
+    color: #ffd700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2, .sub-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffd700;
+}
+
+/* ================================
+   WRAPPER CHUNG (HOMEPAGE)
+================================ */
+#homepage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+/* ================================
+   FLEX CÁC MỤC (DỊCH VỤ / FEEDBACK)
+================================ */
+.home-main-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 50px;
+}
+
+/* ================================
+   BOX CHUNG (STYLE SPYRO)
+================================ */
+.home-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    flex: 1;
+    min-width: 300px;
+}
+
+.home-box:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffd700;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.home-title {
+    font-size: 24px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.home-desc {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+/* ================================
+   KNOWLEDGE / CARD GRID (HỆ THỐNG BÀI)
+================================ */
+.knowledge-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.knowledge-item {
+    padding: 12px;
+    background: rgba(255, 215, 0, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 2px;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.25s;
+    color: #ffd700;
+}
+
+.knowledge-item:hover {
+    background: #ffd700;
+    color: #001f3f;
+    font-weight: bold;
+}
+
+/* ================================
+   NÚT BẤM ĐẶT LỊCH (CTA)
+================================ */
+.btn-spyro {
+    background: #ffd700;
+    color: #001f3f;
+    padding: 12px 24px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    transition: 0.3s;
+}
+
+.btn-spyro:hover {
+    transform: scale(1.05);
+    background: #ffffff;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 950px) {
+    #homepage {
+        padding: 40px 20px;
+    }
+    
+    .home-main-flex {
+        flex-direction: column;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,170 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    min-height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent; 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- LOGO & BRAND CĂN TRÁI --- */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover img {
+    transform: scale(1.05); 
+}
+
+.brand-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.brand-name {
+    font-family: 'Vollkorn', serif;
+    color: #ffd700;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.brand-slogan {
+    font-family: 'Cormorant Garamond', serif;
+    color: #cccccc;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* --- MENU LINKS CĂN PHẢI --- */
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.selector {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    position: relative;
+    padding: 5px 0;
+}
+
+/* HIỆU ỨNG GẠCH CHÂN */
+.label {
+    position: relative;
+    display: inline-block;
+}
+
+.label::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+}
+
+.selector:hover {
+    color: #ffd700 !important;
+}
+
+.selector:hover .label::after {
+    width: 100%;
+}
+
+/* --- TRIGGER MENU MOBILE --- */
+.menu-trigger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffd700;
+    transition: 0.4s;
+}
+
+.bar.ex:nth-child(1) { transform: translate(0, 8px) rotate(-45deg); }
+.bar.ex:nth-child(2) { opacity: 0; }
+.bar.ex:nth-child(3) { transform: translate(0, -8px) rotate(45deg); }
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    .menu-trigger { display: flex; }
+
+    .nav-links {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        max-height: 0;
+        background: rgba(0, 31, 63, 0.95);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        gap: 0;
+    }
+
+    .nav-links.active {
+        max-height: 400px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .selector {
+        width: 100%;
+        padding: 25px 0;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.05);
+    }
+
+    .brand-slogan { display: none; } /* Ẩn slogan trên mobile cho thoáng */
+
+    .nav-logo img {
+        height: 50px;
+    }
+    
+    .nav-container {
+        padding: 0 20px;
+    }
+}

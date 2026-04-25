@@ -1,0 +1,42 @@
+[
+  {
+    "id": "lite",
+    "title": "Gói Ánh Sao",
+    "price": "79.000VND",
+    "icon": "star.svg",
+    "features": [
+      "01 câu hỏi cụ thể",
+      "Giải đáp ngắn gọn",
+      "Thời gian: 15 - 20 phút",
+      "Hỗ trợ hậu mãi trong vòng 24h"
+    ]
+  },
+  {
+    "id": "standard",
+    "title": "Gói Ánh Trăng",
+    "price": "149.000VND",
+    "icon": "moon.svg",
+    "features": [
+      "01 lĩnh vực cụ thể",
+      "Giải đáp chi tiết vấn đề",
+      "Cung cấp hình ảnh trải bài",
+      "Thời gian: 30 - 60 phút",
+      "Hỗ trợ hậu mãi trong vòng 07 ngày"
+    ]
+  },
+  {
+    "id": "premium",
+    "title": "Gói Ánh Dương",
+    "price": "299.000VND",
+    "icon": "sun.svg",
+    "features": [
+      "Không giới hạn câu hỏi hay lĩnh vực",
+      "Giải đáp chuyên sâu vấn đề",
+      "Cung cấp hình ảnh trải bài",
+      "Thời gian: Không giới hạn",
+      "Được ưu tiên xếp lịch xem bài",
+      "Tặng kèm 01 bản PDF diễn giải chuyên sâu toàn bộ trải bài",
+      "Hỗ trợ hậu mãi trong vòng 14 ngày"
+    ]
+  }
+]

@@ -1,0 +1,134 @@
+#feedback-section {
+    padding: 80px 20px;
+    color: #ffffff;
+}
+
+.feedback-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feedback-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feedback-title {
+    font-family: 'Vollkorn', serif;
+    color: #ffd700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feedback-subtitle {
+    font-style: italic;
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+/* --- LƯỚI ẢNH --- */
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.feedback-item {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feedback-item:hover {
+    transform: translateY(-5px);
+    border-color: #ffd700;
+}
+
+.fb-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fb-hover-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feedback-item:hover .fb-hover-overlay {
+    opacity: 1;
+}
+
+.fb-hover-overlay span {
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* --- MODAL (PHÓNG TO) --- */
+.fb-modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: zoom-out;
+    animation: fadeIn 0.3s ease;
+}
+
+.fb-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+}
+
+.fb-modal-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.fb-close-btn {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #ffd700;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --- MOBILE --- */
+@media (max-width: 600px) {
+    .feedback-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .feedback-title {
+        font-size: 1.8rem;
+    }
+}

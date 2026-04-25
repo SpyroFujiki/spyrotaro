@@ -1,0 +1,212 @@
+/* --- RESET & LAYOUT CHÍNH --- */
+#tos-page {
+    padding: 80px 20px;
+    background: transparent;
+    color: #e0e0e0;
+}
+
+.tos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tos-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.tos-title {
+    font-family: 'Vollkorn', serif;
+    color: #ffd700;
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.tos-subtitle {
+    color: #bbb;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* --- HỆ THỐNG ACCORDION --- */
+.tos-accordion {
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.tos-item {
+    border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.tos-item-header {
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tos-item-header:hover {
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.tos-item-header h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.tos-icon {
+    color: #ffd700;
+    font-size: 1.5rem;
+}
+
+/* --- HIỆU ỨNG ĐÓNG MỞ (SỬA LỖI CHẬM) --- */
+.tos-item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+}
+
+.tos-item.active .tos-item-content {
+    max-height: 1500px; 
+    transition: max-height 0.4s cubic-bezier(1, 0, 1, 0);
+}
+
+.tos-content-inner {
+    padding: 30px 45px 45px 45px; 
+}
+
+/* --- ĐỊNH DẠNG BULLET (SỬA LỖI SÁT LỀ) --- */
+.tos-list {
+    list-style: none;
+    padding-left: 5px !important;
+    margin: 15px 0 !important;
+}
+
+.tos-list li {
+    position: relative;
+    padding-left: 30px !important;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.tos-list li::before {
+    content: "◈";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+    font-size: 14px;
+}
+
+/* --- GRID PHẠM VI TƯ VẤN (MỤC 2) --- */
+.tos-scope-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.scope-box {
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.scope-box h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ffd700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.accepted { border-top: 3px solid #4caf50; }
+.denied { border-top: 3px solid #ff5252; }
+
+/* --- TRƯỜNG HỢP NGOẠI LỆ (SPECIAL NOTES) --- */
+.special-highlight {
+    margin-top: 30px;
+    padding: 20px 30px;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.03) 100%);
+    border-left: 5px solid #ffd700;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.glow-icon { color: #ffd700; font-size: 1.4rem; }
+.special-highlight p { margin: 0; font-style: italic; color: #fff; font-weight: 500; }
+
+/* --- HOÀN PHÍ & HẬU MÃI --- */
+.refund-container {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.refund-line { margin: 8px 0; }
+.green strong { color: #81c784; }
+.red strong { color: #e57373; }
+
+.exclude-section {
+    margin-top: 25px;
+}
+
+.exclude-title {
+    color: #ffd700;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* --- FOOTER & CTA --- */
+.tos-footer {
+    margin-top: 70px;
+}
+
+.tos-confirmation-card {
+    padding: 40px;
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px dashed #ffd700;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tos-confirmation-card h2 { color: #ffd700; margin-bottom: 15px; }
+
+.tos-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-facebook {
+    display: inline-block;
+    padding: 15px 45px;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.btn-facebook:hover {
+    background: #ffd700;
+    color: #001f3f;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+/* --- MOBILE --- */
+@media (max-width: 900px) {
+    .tos-scope-grid { grid-template-columns: 1fr; }
+    .tos-container { padding: 0 10px; }
+    .tos-content-inner { padding: 25px; }
+}

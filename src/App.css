@@ -1,0 +1,153 @@
+/* ================================
+   1. RESET & VARIABLE SETUP
+================================ */
+:root {
+    --bg-dark: #001f3f;       /* Xanh dương đậm chủ đạo */
+    --gold: #ffd700;          /* Vàng Gold */
+    --gold-dim: rgba(255, 215, 0, 0.3);
+    --text-light: #f4f4f4;
+    --text-dim: #cccccc;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.02) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.02) 0%, transparent 50%),
+        url("https://www.transparenttextures.com/patterns/stardust.png");
+    
+    background-attachment: scroll; 
+    
+    animation: starMovement 100s linear infinite;
+}
+
+@keyframes starMovement {
+    from { background-position: 0 0, 0 0, 0 0; }
+    to { background-position: 0 0, 0 0, 1000px 2000px; }
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ================================
+   2. TYPOGRAPHY CHUNG
+================================ */
+h1, h2, h3 {
+    font-family: 'Vollkorn', serif;
+    color: var(--gold);
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+/* ================================
+   3. SECTION LAYOUT (HOMEPAGE)
+================================ */
+.home-sections {
+    margin: 60px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.section-box {
+    border-radius: 4px;
+    padding: 30px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 31, 63, 0.8);
+    backdrop-filter: blur(8px);  
+    border: 1px solid var(--gold-dim);
+}
+
+.section-box:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    background: rgba(255, 215, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: var(--gold);
+}
+
+.section-desc {
+    font-size: 15px;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+/* ================================
+   4. DROPLIST (MENU PHỤ)
+================================ */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: #002d5a;
+    border: 1px solid var(--gold-dim);
+    padding: 10px 0;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.dropdown a {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.dropdown a:hover {
+    background: var(--gold);
+    color: var(--bg-dark);
+}
+
+.nav-item:hover .dropdown {
+    display: flex;
+}
+
+/* ================================
+   5. RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+    .home-sections {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-box {
+        padding: 20px;
+    }
+}

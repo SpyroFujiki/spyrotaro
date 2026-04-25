@@ -1,0 +1,115 @@
+{
+    "title": "ĐIỀU KHOẢN DỊCH VỤ (TERMS OF SERVICE)",
+    "introduction": "Chào mừng bạn đến với Spyro Taro. Để đảm bảo quyền lợi và tính minh bạch trong quá trình tư vấn, vui lòng đọc kỹ các điều khoản sau trước khi xác nhận lịch hẹn.",
+    "sections": [
+        {
+            "id": 1,
+            "heading": "Bản chất dịch vụ & Miễn trừ trách nhiệm",
+            "content": [
+                "Công cụ hỗ trợ: Tarot được sử dụng như hệ thống biểu tượng giúp phản chiếu trạng thái nội tâm và phân tích xu hướng tại thời điểm truy vấn.",
+                "Giới hạn tham vấn: Dịch vụ mang tính chất định hướng và chiêm nghiệm cá nhân, không thay thế cho các tư vấn chuyên môn về y tế, pháp lý hoặc tài chính chuyên sâu.",
+                "Trách nhiệm quyết định: Khách hàng hoàn toàn chịu trách nhiệm về mọi quyết định và hành động cá nhân phát sinh sau phiên tư vấn.",
+                "Tuyên bố miễn trừ: Spyro Taro không chịu trách nhiệm pháp lý đối với bất kỳ hậu quả nào từ việc áp dụng thông tin được cung cấp trong phiên xem."
+            ]
+        },
+        {
+            "id": 2,
+            "heading": "Phạm vi và Ranh giới tư vấn",
+            "sub_sections": {
+                "accepted_content": [
+                    "Các mối quan hệ",
+                    "Học tập và thi cử",
+                    "Công việc và sự nghiệp",
+                    "Tài chính cá nhân (không bao gồm tư vấn đầu tư hoặc kế hoạch tài chính chuyên sâu)"
+                ],
+                "denied_content": [
+                    "Sức khỏe nghiêm trọng, sinh tử",
+                    "Kết quả kiện tụng, pháp lý",
+                    "Cờ bạc, đầu cơ, hành vi vi phạm pháp luật",
+                    "Xâm phạm đời tư bên thứ ba không có sự đồng thuận"
+                ]
+            },
+            "special_notes": "Trong các tình huống khẩn cấp, tôi giữ quyền xem xét linh hoạt dựa trên đạo đức nghề nghiệp để hỗ trợ giải pháp tốt nhất cho khách hàng."
+        },
+        {
+            "id": 3,
+            "heading": "Cam kết chất lượng",
+            "content": [
+                "Cam kết từ Spyro Taro: Truyền tải thông tin khách quan và trung thực dựa trên trải bài, không để định kiến cá nhân làm sai lệch thông điệp.",
+                "Nâng cấp gói: Spyro hỗ trợ khách hàng nâng cấp gói dịch vụ trực tiếp trong phiên tư vấn nếu số lượng thắc mắc phát sinh vượt quá phạm vi gói ban đầu.",
+                "Phạm vi phân tích: Nội dung tập trung phân tích xu hướng trong vòng 03 tháng gần nhất để đảm bảo tính cập nhật và độ chính xác cao nhất.",
+                "Tính biến động: Thông điệp không phải là định mệnh bất biến, kết quả có thể thay đổi dựa trên hành động thực tế và sự lựa chọn của khách hàng."
+            ]
+        },
+        {
+            "id": 4,
+            "heading": "Trách nhiệm khách hàng",
+            "content": [
+                "Cam kết từ Khách hàng: Cam kết cung cấp thông tin đúng sự thật và rõ ràng; độ chính xác của phiên tư vấn phụ thuộc trực tiếp vào dữ liệu đầu vào này.",
+                "Tôn trọng quy trình: Tuân thủ đúng thời gian đã hẹn và quy định về lịch hẹn để đảm bảo trải nghiệm tốt nhất."
+            ]
+        },
+        {
+            "id": 5,
+            "heading": "Giải quyết khiếu nại",
+            "content": [
+                "Giới hạn khiếu nại: Mọi phản hồi về sai sót chuyên môn (Reader đọc sai ý nghĩa lá bài) cần được gửi trong vòng 14 ngày kể từ khi kết thúc phiên xem.",
+                "Giải pháp khắc phục: Nếu xác định lỗi thuộc về kỹ năng giải bài của Reader, khách hàng sẽ được hỗ trợ xem lại vấn đề đó (miễn phí), nhận voucher giảm giá 50% cho phiên tư vấn tiếp theo hoặc hoàn tiền."
+            ]
+        },
+        {
+            "id": 6,
+            "heading": "Quy trình thanh toán & Chính sách hoàn phí",
+            "payment_terms": [
+                "Xác nhận lịch hẹn: Khách hàng thực hiện đặt cọc 50% giá trị gói dịch vụ để hoàn tất quy trình đặt lịch.",
+                "Thanh toán hoàn tất: 50% chi phí còn lại được hoàn tất ngay trước khi phiên tư vấn chính thức bắt đầu."
+            ],
+            "refund_policies": {
+                "refund_when": [
+                    "Spyro Taro chủ động hủy lịch hẹn",
+                    "Sự cố kết nối hoặc không đạt được sự tương hợp năng lượng trong 15 phút đầu tiên"
+                ],
+                "no_refund": [
+                    "Hủy lịch trong vòng 02 giờ trước giờ hẹn",
+                    "Vắng mặt không thông báo trước",
+                    "Khiếu nại dựa trên mong đợi hoặc cảm nhận chủ quan về kết quả"
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "heading": "Quy định lịch hẹn & Bàn giao tài liệu",
+            "content": [
+                "Điều chỉnh thời gian: Vui lòng thông báo thay đổi lịch hẹn trước ít nhất 02 giờ để được hỗ trợ sắp xếp.",
+                "Quy định trễ hẹn: Nếu trễ quá 15 phút không báo trước, phiên có thể bị hủy. Thời gian trễ sẽ được trừ trực tiếp vào tổng thời lượng tư vấn.",
+                "Bàn giao tư liệu: Bản tổng kết PDF chuyên sâu (nếu có) sẽ được gửi đến khách hàng trong vòng 03 ngày làm việc."
+            ]
+        },
+        {
+            "id": 8,
+            "heading": "Hỗ trợ hậu mãi",
+            "content": [
+                "Thời hạn hậu mãi: Ánh Sao (24h) | Ánh Trăng (07 ngày) | Ánh Dương (14 ngày).",
+                "Phạm vi hỗ trợ: Làm rõ các luận điểm đã nêu trong phiên xem cũ để khách hàng thấu suốt thông điệp."
+            ],
+            "not_included": [
+                "Đặt các câu hỏi về vấn đề mới phát sinh",
+                "Mở rộng sang các chủ đề khác ngoài trải bài đã thực hiện"
+            ],
+            "special_notes": "Sau khi kết thúc thời gian hậu mãi, mọi yêu cầu tư vấn tiếp theo sẽ được tính như một phiên làm việc mới."
+        },
+        {
+            "id": 9,
+            "heading": "Bảo mật thông tin & Quy tắc ứng xử",
+            "content": [
+                "Bảo mật tuyệt đối: Mọi thông tin định danh và nội dung trao đổi được giữ kín hoàn toàn trong phạm vi nghề nghiệp.",
+                "Văn hóa tư vấn: Spyro Taro có quyền đơn phương dừng phiên tư vấn nếu khách hàng có hành vi xúc phạm, thiếu tôn trọng hoặc thiếu thiện chí.",
+                "Bản quyền nội dung: Nghiêm cấm tự ý ghi âm, ghi hình hoặc phát tán nội dung phiên tư vấn khi chưa có sự đồng ý của Spyro Taro."
+            ]
+        }
+    ],
+    "confirmation": {
+        "warning": "⚠️ Xác nhận",
+        "message": "Việc thực hiện thanh toán đặt cọc đồng nghĩa với việc quý khách đã đọc, hiểu và hoàn toàn đồng ý tuân thủ các điều khoản dịch vụ trên."
+    }
+}
