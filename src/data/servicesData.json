@@ -18,6 +18,7 @@
     "icon": "moon.svg",
     "features": [
       "01 lĩnh vực cụ thể",
+      "Tối đa 03 câu hỏi liên quan",
       "Cung cấp hình ảnh trải bài",
       "Thời gian: 30 - 60 phút",
       "Hỗ trợ hậu mãi trong vòng 07 ngày"
@@ -29,6 +30,8 @@
     "price": "299.000VND",
     "icon": "sun.svg",
     "features": [
+      "01 lĩnh vực cụ thể",
+      "Không giới hạn số lượng câu hỏi",
       "Giải đáp chuyên sâu vấn đề",
       "Cung cấp hình ảnh trải bài",
       "Thời gian: Không giới hạn",
